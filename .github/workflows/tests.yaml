@@ -13,9 +13,9 @@ on:
       - "Dockerfile"
 
 env:
-  HUB_BASE: iterativodo
-  GIT_BASE: ghcr.io/iterativo-git
-  GCR_BASE: gcr.io/iterativo
+  HUB_BASE: dixgrake
+  GIT_BASE: ghcr.io/dixgrake
+  GCR_BASE: gcr.io/starlean-odoo
 
 jobs:
   build:
