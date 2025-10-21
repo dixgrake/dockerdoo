@@ -1,4 +1,4 @@
-FROM python:3.10-slim-bullseye as base
+FROM python:3.11-slim-bullseye as base
 
 SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
 
@@ -6,10 +6,10 @@ USER root
 
 # Library versions
 ARG WKHTMLTOX_VERSION
-ENV WKHTMLTOX_VERSION ${WKHTMLTOX_VERSION:-"0.12.5"}
+ENV WKHTMLTOX_VERSION ${WKHTMLTOX_VERSION:-"0.12.6"}
 
 ARG WKHTMLTOPDF_CHECKSUM
-ENV WKHTMLTOPDF_CHECKSUM ${WKHTMLTOPDF_CHECKSUM:-"ea8277df4297afc507c61122f3c349af142f31e5"}
+ENV WKHTMLTOPDF_CHECKSUM ${WKHTMLTOPDF_CHECKSUM:-"d9f259a67e05e1c221d48b504453645e6c491fab"}
 
 # Use noninteractive to get rid of apt-utils message
 ENV DEBIAN_FRONTEND=noninteractive
